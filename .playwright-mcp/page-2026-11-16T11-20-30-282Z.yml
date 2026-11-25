@@ -1,0 +1,61 @@
+- generic [ref=e80]:
+  - banner [ref=e82]:
+    - link [ref=e84] [cursor=pointer]:
+      - /url: /dashboard
+      - img "Asset Connect" [ref=e85]
+    - navigation "Main Navigation" [ref=e86]:
+      - link "Dashboard" [ref=e87] [cursor=pointer]:
+        - /url: /dashboard
+        - generic "Dashboard" [ref=e89]
+      - link "Configure" [ref=e91] [cursor=pointer]:
+        - /url: /configure
+        - generic "Configure" [ref=e93]
+      - link "Onboarding" [ref=e95] [cursor=pointer]:
+        - /url: /onboarding
+        - generic "Onboarding" [ref=e97]
+      - link "Trips" [ref=e99] [cursor=pointer]:
+        - /url: /trips
+        - generic "Trips" [ref=e101]
+      - link "Reports" [ref=e103] [cursor=pointer]:
+        - /url: /reports
+        - generic "Reports" [ref=e105]
+      - link "More" [ref=e107] [cursor=pointer]:
+        - /url: /more
+    - generic [ref=e114]:
+      - link "Open Map" [ref=e115] [cursor=pointer]:
+        - /url: /map
+      - button "View Notifications" [ref=e119] [cursor=pointer]:
+        - generic "Unread alerts" [ref=e122]
+      - link "Button Guidelines & Style References" [ref=e123] [cursor=pointer]:
+        - /url: /button-references
+      - button "A Anil T" [ref=e137] [cursor=pointer]:
+        - generic "User Avatar" [ref=e138]: A
+        - generic [ref=e140]: Anil T
+  - main [ref=e144]:
+    - generic [ref=e147]:
+      - heading "Micro Frontend Remote Standby" [level=2] [ref=e151]
+      - paragraph [ref=e152]:
+        - text: Unable to establish a live connection to the
+        - code [ref=e153]: fleet_management
+        - text: remote module at
+        - code [ref=e154]: https://dev.assetconect.com/remoteEntry.json
+        - text: .
+      - generic [ref=e155]:
+        - generic [ref=e156]:
+          - generic [ref=e157]: "Target Remote:"
+          - generic [ref=e158]: fleet_management (Port 4201)
+        - generic [ref=e159]:
+          - generic [ref=e160]: "Active Environment:"
+          - generic [ref=e161]: dev
+        - generic [ref=e162]:
+          - generic [ref=e163]: "Configured Entry:"
+          - generic [ref=e164]: https://dev.assetconect.com/remoteEntry.json
+      - generic [ref=e165]:
+        - paragraph [ref=e166]: "💡 How to run both Shell and Fleet MFE concurrently in development:"
+        - generic [ref=e167]: npm run start:all
+        - paragraph [ref=e168]: "or in separate terminal tabs:"
+        - generic [ref=e169]: npm run start:fleet
+      - generic [ref=e170]:
+        - button "Retry Connection" [ref=e171] [cursor=pointer]
+        - link "Open Standalone Port 4201" [ref=e177] [cursor=pointer]:
+          - /url: https://dev.assetconect.com/

@@ -1,0 +1,14 @@
+[      68ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://dev.assetconect.com/runtime-config.js:0
+[      68ms] [ERROR] Refused to execute script from 'https://dev.assetconect.com/runtime-config.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled. @ https://dev.assetconect.com/configure:0
+[     461ms] [ERROR] [NF][6]: Failed to load module fleet_management/./ConfigureComponent:  {error: NFError: Remote 'fleet_management' is not initialized.
+    at Object.loadRemoteModule2 (https://dev…} @ https://dev.assetconect.com/chunk-LINKRI43.js:4444
+[     461ms] [ERROR] [NF][6]: Failed to load module fleet_management/./UsersViewComponent:  {error: NFError: Remote 'fleet_management' is not initialized.
+    at Object.loadRemoteModule2 (https://dev…} @ https://dev.assetconect.com/chunk-LINKRI43.js:4444
+[     462ms] [WARNING] [AssetConnect Shell] Remote fleet_management loading fallback active for Configure: NFError: Failed to load module fleet_management/./ConfigureComponent
+    at Object.loadRemoteModule2 (https://dev.assetconect.com/chunk-LINKRI43.js:3093:9)
+    at loadRemoteModule (https://dev.assetconect.com/chunk-LINKRI43.js:4688:29)
+    at async https://dev.assetconect.com/_angular_router.s29f5ISGRs-dev.js:3352:24 @ https://dev.assetconect.com/chunk-NPNRIIAJ.js:698
+[     462ms] [WARNING] [AssetConnect Shell] Remote fleet_management loading fallback active for UsersView: NFError: Failed to load module fleet_management/./UsersViewComponent
+    at Object.loadRemoteModule2 (https://dev.assetconect.com/chunk-LINKRI43.js:3093:9)
+    at loadRemoteModule (https://dev.assetconect.com/chunk-LINKRI43.js:4688:29)
+    at async https://dev.assetconect.com/_angular_router.s29f5ISGRs-dev.js:3352:24 @ https://dev.assetconect.com/chunk-NPNRIIAJ.js:713

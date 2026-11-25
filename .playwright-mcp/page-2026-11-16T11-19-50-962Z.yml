@@ -1,0 +1,33 @@
+- generic [ref=e40]:
+  - generic [ref=e42]:
+    - img "Connected Fleet Network Illustration"
+    - generic [ref=e44]:
+      - heading "Connected Fleet. Real-Time Intelligence." [level=2] [ref=e45]
+      - paragraph [ref=e46]: Track, manage and optimize your entire fleet from one unified platform.
+  - generic [ref=e48]:
+    - generic [ref=e49]:
+      - img "Asset Connect" [ref=e50]
+      - generic [ref=e51]: Asset Connect
+    - link "Back to Login" [ref=e53] [cursor=pointer]:
+      - /url: /login
+    - generic [ref=e57]:
+      - heading "OTP Verification" [level=1] [ref=e58]
+      - paragraph [ref=e59]:
+        - text: We sent a 6-digit verification code to
+        - strong [ref=e60]: a***@assettl.com
+    - generic [ref=e61]:
+      - generic [ref=e62]:
+        - generic [ref=e63]: OTP
+        - button "Show OTP" [ref=e64] [cursor=pointer]:
+          - img "Show OTP" [ref=e65]
+      - generic [ref=e66]:
+        - textbox "Digit 1" [ref=e67]
+        - textbox "Digit 2" [ref=e68]
+        - textbox "Digit 3" [ref=e69]
+        - textbox "Digit 4" [ref=e70]
+        - textbox "Digit 5" [ref=e71]
+        - textbox "Digit 6" [ref=e72]
+      - generic [ref=e74]:
+        - text: Resend OTP in
+        - strong [ref=e75]: 01:00
+      - button "Verify OTP" [disabled] [ref=e77]

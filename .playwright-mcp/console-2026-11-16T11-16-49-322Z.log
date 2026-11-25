@@ -1,0 +1,15 @@
+[      45ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://dev.assetconect.com/runtime-config.js:0
+[      45ms] [ERROR] Refused to execute script from 'https://dev.assetconect.com/runtime-config.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled. @ https://dev.assetconect.com/onboarding:0
+[     428ms] [ERROR] [NF][6]: Failed to load module fleet_management/./OnboardingRoutes:  {error: NFError: Remote 'fleet_management' is not initialized.
+    at Object.loadRemoteModule2 (https://dev…} @ https://dev.assetconect.com/chunk-LINKRI43.js:4444
+[     429ms] [WARNING] [AssetConnect Shell] Remote fleet_management loading fallback active for Onboarding: NFError: Failed to load module fleet_management/./OnboardingRoutes
+    at Object.loadRemoteModule2 (https://dev.assetconect.com/chunk-LINKRI43.js:3093:9)
+    at loadRemoteModule (https://dev.assetconect.com/chunk-LINKRI43.js:4688:29)
+    at async loadChildren (https://dev.assetconect.com/_angular_router.s29f5ISGRs-dev.js:3407:18)
+    at async https://dev.assetconect.com/_angular_router.s29f5ISGRs-dev.js:3381:24
+    at async Recognizer.getChildConfig (https://dev.assetconect.com/_angular_router.s29f5ISGRs-dev.js:3112:21)
+    at async Recognizer.matchSegmentAgainstRoute (https://dev.assetconect.com/_angular_router.s29f5ISGRs-dev.js:3063:9)
+    at async Recognizer.processSegment (https://dev.assetconect.com/_angular_router.s29f5ISGRs-dev.js:2999:16)
+    at async Recognizer.matchSegmentAgainstRoute (https://dev.assetconect.com/_angular_router.s29f5ISGRs-dev.js:3083:19)
+    at async Recognizer.processSegment (https://dev.assetconect.com/_angular_router.s29f5ISGRs-dev.js:2999:16)
+    at async Recognizer.processChildren (https://dev.assetconect.com/_angular_router.s29f5ISGRs-dev.js:2987:27) @ https://dev.assetconect.com/chunk-NPNRIIAJ.js:637
