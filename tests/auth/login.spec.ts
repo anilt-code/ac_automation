@@ -64,7 +64,7 @@ test.describe.serial('Login and OTP Authentication', () => {
 
   test('Forgot password link should open the recovery page', async ({ page }) => {
     const loginPage = new LoginPage(page);
-    await loginPage.goto();
+     await loginPage.goto();
     await loginPage.clickForgotPassword();
     await expect(page.getByText(/forgot password|reset password|recover/i)).toBeVisible();
   });
