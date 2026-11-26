@@ -7,7 +7,7 @@ import { readLoginTestData } from '../../utils/excel-reader';
 // This is the location of the Excel login test data.
 const loginDataFile = path.resolve(process.cwd(), 'test-data/login-data.xlsx');
 
-test.describe.serial('Login and OTP Authentication', () => {
+test.describe.serial('npx playwright', () => {
   test('Run login cases from Excel', async ({ page }) => {
     // Read every login row from the Excel file.
     const loginRows = await readLoginTestData(loginDataFile);
@@ -22,7 +22,6 @@ test.describe.serial('Login and OTP Authentication', () => {
         await loginPage.resetSession();
         await loginPage.goto();
 
-        // Fill the email and password from the Excel row.
         await loginPage.login(loginData.email, loginData.password);
 
         // Check what this Excel row should do.
@@ -48,7 +47,25 @@ test.describe.serial('Login and OTP Authentication', () => {
           await otpPage.enterOtp(loginData.otp);
           await otpPage.verify();
           await expect(page.getByText(/invalid|error|otp/i).first()).toBeVisible();
+          return;
         }
+        
+        // Missing-email validation must be handled before the normal login submit.
+        if (loginData.expectedResult === 'missingEmail') {
+          await loginPage.emailInput.fill('');
+          await loginPage.passwordInput.fill(loginData.password);
+          await loginPage.signInButton.click();
+          await expect(page.getByText(/email is required/i).first()).toBeVisible();
+          return;
+        }
+        if (loginData.expectedResult === 'Password is required') {
+          await loginPage.emailInput.fill(loginData.email);
+          await loginPage.passwordInput.fill('');
+          await loginPage.signInButton.click();
+          await expect(page.getByText(/password is required/i).first()).toBeVisible();
+          return;
+        }
+
       });
     }
   });
@@ -64,7 +81,7 @@ test.describe.serial('Login and OTP Authentication', () => {
 
   test('Forgot password link should open the recovery page', async ({ page }) => {
     const loginPage = new LoginPage(page);
-     await loginPage.goto();
+    await loginPage.goto();
     await loginPage.clickForgotPassword();
     await expect(page.getByText(/forgot password|reset password|recover/i)).toBeVisible();
   });

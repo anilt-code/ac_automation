@@ -6,7 +6,7 @@ export interface LoginTestData {
   email: string;
   password: string;
   otp: string;
-  expectedResult: 'success' | 'invalidCredentials' | 'invalidOtp';
+  expectedResult: 'success' | 'invalidCredentials' | 'User does not exist'| 'invalidOtp' | 'missingEmail'|'Password is required';
 }
 
 // This function reads login data from an Excel file.
